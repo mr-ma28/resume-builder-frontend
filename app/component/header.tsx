@@ -50,7 +50,8 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <Link href="/login" className="flex items-center space-x-3 group">
+          <Link href="/" className="flex items-center space-x-3 group">
+            {/* Logo content same rahega */}
             <div className="bg-white p-2 rounded-xl shadow-lg transform group-hover:scale-110 transition-transform duration-300">
               <svg
                 className="w-6 h-6 text-blue-600"
@@ -67,7 +68,6 @@ export default function Header() {
             </div>
             <span className="text-2xl font-bold text-white">ResumeCraft</span>
           </Link>
-
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-3">
             {isLoggedIn ? (
@@ -153,7 +153,6 @@ export default function Header() {
               </>
             )}
           </nav>
-
           {/* Mobile menu button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
