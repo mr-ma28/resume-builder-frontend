@@ -27,7 +27,7 @@ export default function ForgotPasswordPage() {
         html: `
           <h2>Password Reset Request</h2>
           <p>Click the link below to reset your password:</p>
-          <a href="http://localhost:3000/reset-password/?email=${email}" 
+          <a href="${process.env.FRONTEND_URL}/reset-password/?email=${email}" 
              style="color:#2563eb;text-decoration:underline;">
              Reset Password
           </a>

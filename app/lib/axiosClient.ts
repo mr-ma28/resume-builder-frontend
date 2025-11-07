@@ -3,7 +3,7 @@ import Cookies from "js-cookie";
 
 // ✅ Create reusable axios instance
 const axiosClient = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_API_URL || "http://localhost:1337/api",
+  baseURL: process.env.NEXT_PUBLIC_API_URL,
   headers: {
     "Content-Type": "application/json",
   },

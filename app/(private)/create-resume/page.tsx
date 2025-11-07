@@ -158,7 +158,7 @@ export default function CreateResumePage() {
       };
 
       await axios.post(
-        "http://localhost:1337/api/resumes",
+        `${process.env.NEXT_PUBLIC_API_URL}` + "/resumes",
         { data: payload },
         { headers: { Authorization: `Bearer ${token}` } }
       );
